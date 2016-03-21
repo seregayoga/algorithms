@@ -1,4 +1,4 @@
-package quicksort
+package testutil
 
 import (
 	"testing"
@@ -6,14 +6,15 @@ import (
 	"github.com/seregayoga/shuffle"
 )
 
-func TestSort(t *testing.T) {
+// AssertSort tests sort function
+func AssertSort(t *testing.T, sortFunc func([]int)) {
 	a := make([]int, 1000000)
 	for i := range a {
 		a[i] = i
 	}
 	shuffle.Shuffle(a)
 
-	Sort(a)
+	sortFunc(a)
 
 	prev := a[0]
 	for _, item := range a {
