@@ -6,5 +6,5 @@ import (
 )
 
 func TestAssertSort(t *testing.T) {
-	AssertSort(t, sort.Ints)
+	AssertSort(t, sort.Ints, 10000)
 }

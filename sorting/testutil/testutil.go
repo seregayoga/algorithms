@@ -7,8 +7,8 @@ import (
 )
 
 // AssertSort tests sort function
-func AssertSort(t *testing.T, sortFunc func([]int)) {
-	a := make([]int, 1000000)
+func AssertSort(t *testing.T, sortFunc func([]int), size int) {
+	a := make([]int, size)
 	for i := range a {
 		a[i] = i
 	}

@@ -7,5 +7,5 @@ import (
 )
 
 func TestSort(t *testing.T) {
-	testutil.AssertSort(t, Sort)
+	testutil.AssertSort(t, Sort, 10000)
 }
