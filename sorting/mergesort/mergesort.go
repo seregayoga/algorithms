@@ -24,8 +24,7 @@ func merge(a []int) {
 
 	i := 0
 	j := 0
-	k := 0
-	for ; k < len(a); k++ {
+	for k, _ := range a {
 		if i == len(firstPart) {
 			mergeResult[k] = secondPart[j]
 			j++
