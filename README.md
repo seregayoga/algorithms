@@ -1,1 +1,1 @@
-# Algorithms in Go. Just fo fun.
+# Algorithms in Go. Just for fun.
